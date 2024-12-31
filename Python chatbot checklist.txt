@@ -1,0 +1,4 @@
+Python chatbot checklist
+ pip freeze > requirements.txt   - add packages into requirements.txt file
+pip install -r requirements.txt - make txt file (alredy there don't add)
+
