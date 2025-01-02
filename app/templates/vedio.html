@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Lectures</title>
+    <link rel="stylesheet" href="/static/css/intro.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/intro">Introduction</a></li>
+                <li><a href="/">Chatbot</a></li>
+                <li><a href="/videos">Videos</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <section id="videos" class="videos">
+        <h2>Video Lectures</h2>
+        <p>Explore engaging and high-quality video lectures designed to make learning intuitive and enjoyable.</p>
+        <div class="video-gallery">
+            <!-- Video 1 -->
+            <div class="video-card" data-video="https://www.youtube.com/embed/kjBOesZCoqc">
+                <iframe src="https://www.youtube.com/embed/kjBOesZCoqc" frameborder="0" allowfullscreen></iframe>
+                <h3>Python for Beginners</h3>
+                <p>Get started with Python programming and learn the basics with this easy-to-follow tutorial.</p>
+            </div>
+            <!-- Video 2 -->
+            <div class="video-card" data-video="https://www.youtube.com/embed/3yqDxhR2XxE">
+                <iframe src="https://www.youtube.com/embed/3yqDxhR2XxE" frameborder="0" allowfullscreen></iframe>
+                <h3>Introduction to Algorithms</h3>
+                <p>Learn what algorithms are and how they work, explained in a simple and clear way.</p>
+            </div>
+            <!-- Video 3 -->
+            <div class="video-card" data-video="https://www.youtube.com/embed/zOjov-2OZ0E">
+                <iframe src="https://www.youtube.com/embed/zOjov-2OZ0E" frameborder="0" allowfullscreen></iframe>
+                <h3>HTML, CSS, and JavaScript Basics</h3>
+                <p>Learn how to build web pages with HTML, style them with CSS, and add interactivity with JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Popup -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-popup">Close</button>
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="/static/images/logo.jpg" alt="Logo">
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024 IT Learning Platform. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Popup functionality
+        const videoCards = document.querySelectorAll('.video-card');
+        const popupOverlay = document.querySelector('.popup-overlay');
+        const popupIframe = document.querySelector('.popup-content iframe');
+        const closePopupBtn = document.querySelector('.close-popup');
+
+        videoCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const videoSrc = card.getAttribute('data-video');
+                popupIframe.src = videoSrc;
+                popupOverlay.classList.add('active');
+            });
+        });
+
+        closePopupBtn.addEventListener('click', () => {
+            popupOverlay.classList.remove('active');
+            popupIframe.src = ''; // Stop the video
+        });
+
+        popupOverlay.addEventListener('click', (e) => {
+            if (e.target === popupOverlay) {
+                popupOverlay.classList.remove('active');
+                popupIframe.src = ''; // Stop the video
+            }
+        });
+    </script>
+</body>
+</html>

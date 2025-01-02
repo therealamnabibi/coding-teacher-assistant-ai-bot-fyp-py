@@ -53,30 +53,43 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 header .logo img {
-    max-height: 100px;
+    height: 120px; /* Adjust the logo size */
+    border-radius: 50%;
+    border: 2px solid white; /* Add a border around the logo */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+header .logo img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px; /* Adjust spacing between links */
     margin: 0;
     padding: 0;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: black;
     font-weight: bold;
-    font-size: 16px;
+    color: white; /* White text for contrast */
+    text-transform: uppercase; /* Make text uppercase */
+    font-size: 16px; /* Adjust font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 header nav ul li a:hover {
-    color: #007bff; /* Blue highlight on hover */
+    color: #ffdd57; /* Add a highlight color on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+    text-shadow: 0 0 10px rgba(255, 221, 87, 0.8); /* Glow effect */
 }

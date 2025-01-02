@@ -12,13 +12,23 @@ print("Loaded API Key:", openai.api_key)
 
 # Initialize Flask app
 app = Flask(__name__, template_folder="app/templates", static_folder="app/static")
+
+# Route for introduction page
 @app.route("/intro")
 def intro():
     return render_template("intro.html")
+
+# Route for chatbot page
 @app.route("/")
 def home():
     return render_template("index.html", response=None)
 
+# Route for video page
+@app.route("/vedio")
+def vedio():
+    return render_template("vedio.html")
+
+# Chatbot endpoint
 @app.route("/ask", methods=["POST"])
 def ask():
     question = request.form.get("question")
@@ -52,7 +62,5 @@ def ask():
         print(f"Error occurred: {e}")
         return render_template("index.html", response=f"Error occurred: {e}")
 
-
 if __name__ == "__main__":
     app.run(debug=True)
-
