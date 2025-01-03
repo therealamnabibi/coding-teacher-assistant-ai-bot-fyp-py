@@ -14,19 +14,27 @@ print("Loaded API Key:", openai.api_key)
 app = Flask(__name__, template_folder="app/templates", static_folder="app/static")
 
 # Route for introduction page
-@app.route("/intro")
+@app.route("/index")
 def intro():
-    return render_template("intro.html")
+    return render_template("index.html")
 
 # Route for chatbot page
 @app.route("/")
 def home():
-    return render_template("index.html", response=None)
+    return render_template("chatbot.html", response=None)
 
 # Route for video page
 @app.route("/vedio")
 def vedio():
     return render_template("vedio.html")
+
+@app.route("/notes")
+def notes():
+    return render_template("Course/notes.html")
+
+@app.route("/notes/csharp")
+def csharp_notes():
+    return render_template("Course/csharp.html")  # Create a template for C# notes
 
 # Chatbot endpoint
 @app.route("/ask", methods=["POST"])
@@ -35,7 +43,7 @@ def ask():
     print("Received question:", question)
 
     if not question:
-        return render_template("index.html", response="Please enter a question.")
+        return render_template("chatbot.html", response="Please enter a question.")
 
     try:
         print("Sending request to OpenAI API...")
@@ -52,15 +60,13 @@ def ask():
         # Extract the correct response
         answer = response['choices'][0]['message']['content'].strip()
         print("OpenAI API response:", answer)
-        return render_template("index.html", response=answer)
+        return render_template("chatbot.html", response=answer)
 
-    except openai.error.AuthenticationError:
-        print("Invalid API Key. Please check your key.")
-        return render_template("index.html", response="Invalid API Key. Please check your setup.")
+
 
     except Exception as e:
         print(f"Error occurred: {e}")
-        return render_template("index.html", response=f"Error occurred: {e}")
+        return render_template("chatbot.html", response=f"Error occurred: {e}")
 
 if __name__ == "__main__":
     app.run(debug=True)
