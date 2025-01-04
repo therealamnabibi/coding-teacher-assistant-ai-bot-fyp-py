@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Notes</title>
+    <link rel="stylesheet" href="/static/css/notes.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index">Introduction</a></li>
+                <li><a href="/">Chatbot</a></li>
+                <li><a href="/vedio">Videos</a></li>
+                <li><a href="/notes">Notes</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Notes Content Section -->
+    <section id="notes-content" class="notes-content">
+        <h1>HTML Notes</h1>
+        <p>Comprehensive and beginner-friendly notes on HTML programming.</p>
+
+        <article class="note-section">
+            <h2>Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It structures the content of a webpage using elements and tags.</p>
+        </article>
+
+        <article class="note-section">
+            <h2>Key Features of HTML</h2>
+            <ul>
+                <li>Easy-to-learn and widely used language.</li>
+                <li>Platform-independent and works across all browsers.</li>
+                <li>Forms the backbone of every web page.</li>
+                <li>Supports multimedia integration (images, videos, and audio).</li>
+                <li>Facilitates hyperlinking between web pages.</li>
+            </ul>
+        </article>
+
+        <article class="note-section">
+            <h2>Basic HTML Structure</h2>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First HTML Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;Welcome to HTML programming.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </div>
+                <div class="output-block">
+                    <h1>Hello, World!</h1>
+                    <p>Welcome to HTML programming.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="note-section">
+            <h2>Common HTML Tags</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                        <td>Defines headings from largest (&lt;h1&gt;) to smallest (&lt;h6&gt;).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Defines a paragraph.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>Defines a hyperlink.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Embeds an image.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt; &amp; &lt;ol&gt;</td>
+                        <td>Defines unordered and ordered lists, respectively.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="note-section">
+            <h2>Attributes in HTML</h2>
+            <p>Attributes provide additional information about HTML elements:</p>
+            <ul>
+                <li><strong>id:</strong> Specifies a unique identifier for an element.</li>
+                <li><strong>class:</strong> Specifies a class name for an element.</li>
+                <li><strong>src:</strong> Specifies the source file for images or videos.</li>
+                <li><strong>href:</strong> Specifies the URL for hyperlinks.</li>
+                <li><strong>alt:</strong> Provides alternative text for images.</li>
+            </ul>
+        </article>
+
+        <article class="note-section">
+            <h2>Forms in HTML</h2>
+            <p>HTML forms are used to collect user input:</p>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;br&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+                    </pre>
+                </div>
+                <div class="output-block">
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/static/images/logo.jpg" alt="Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 LearnIT Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

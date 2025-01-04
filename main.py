@@ -34,7 +34,31 @@ def notes():
 
 @app.route("/notes/csharp")
 def csharp_notes():
-    return render_template("Course/csharp.html")  # Create a template for C# notes
+    return render_template("Course/csharp.html")
+@app.route("/notes/Cpp")
+def Cpp_notes():
+    return render_template("Course/Cpp.html")
+
+@app.route("/notes/html")
+def html_notes():
+    return render_template("Course/html.html")
+
+@app.route("/notes/css")
+def css_notes():
+    return render_template("Course/css.html")
+@app.route("/notes/python")
+def python_notes():
+    return render_template("Course/python.html")
+
+@app.route("/notes/javaScript")
+def javaScript_notes():
+    return render_template("Course/javaScript.html")
+@app.route("/notes/sql")
+def sql_notes():
+    return render_template("Course/sql.html")
+@app.route("/notes/php")
+def php_notes():
+    return render_template("Course/php.html")
 
 # Chatbot endpoint
 @app.route("/ask", methods=["POST"])

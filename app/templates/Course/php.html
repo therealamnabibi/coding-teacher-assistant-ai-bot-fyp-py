@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Notes</title>
+    <link rel="stylesheet" href="/static/css/notes.css">
+     <script src="/static/js/scripts.js"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index">Introduction</a></li>
+                <li><a href="/">Chatbot</a></li>
+                <li><a href="/vedio">Videos</a></li>
+                <li><a href="/notes">Notes</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Notes Content Section -->
+    <section id="notes-content" class="notes-content">
+        <h1>PHP Notes</h1>
+        <p>PHP (Hypertext Preprocessor) is a widely-used open-source server-side scripting language designed for web development. It's a versatile language that powers dynamic and interactive websites and applications.</p>
+
+        <article class="note-section">
+            <h2>Why Learn PHP?</h2>
+            <ul>
+                <li>PHP is easy to learn and suitable for beginners in server-side scripting.</li>
+                <li>It integrates seamlessly with databases like MySQL for dynamic content generation.</li>
+                <li>It powers over 75% of websites globally, including popular platforms like WordPress.</li>
+                <li>PHP offers extensive frameworks like Laravel and CodeIgniter for efficient development.</li>
+            </ul>
+        </article>
+
+        <article class="note-section">
+            <h2>PHP Hello World</h2>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+&lt;?php
+// A simple PHP script
+echo "Hello, PHP!";
+?&gt;
+                    </pre>
+                    <button class="run-button" onclick="runPHPExample1()">Run</button>
+                </div>
+                <div class="output-block" id="output-php-hello">
+                    <!-- Output will appear here -->
+                </div>
+            </div>
+        </article>
+
+        <article class="note-section">
+            <h2>Variables in PHP</h2>
+            <p>PHP variables start with a <code>$</code> symbol and store data of different types such as strings, integers, and arrays.</p>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+&lt;?php
+$name = "John";
+$age = 30;
+echo "Name: $name, Age: $age";
+?&gt;
+                    </pre>
+                    <button class="run-button" onclick="runPHPVariables()">Run</button>
+                </div>
+                <div class="output-block" id="output-php-variables">
+                    <!-- Output will appear here -->
+                </div>
+            </div>
+        </article>
+
+        <article class="note-section">
+            <h2>Conditional Statements in PHP</h2>
+            <p>PHP supports conditional statements like <code>if</code>, <code>else</code>, and <code>switch</code> for decision-making:</p>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+&lt;?php
+$num = 10;
+if ($num % 2 == 0) {
+    echo "The number $num is Even";
+} else {
+    echo "The number $num is Odd";
+}
+?&gt;
+                    </pre>
+                    <button class="run-button" onclick="runPHPConditional()">Run</button>
+                </div>
+                <div class="output-block" id="output-php-conditional">
+                    <!-- Output will appear here -->
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/static/images/logo.jpg" alt="Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 LearnIT Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

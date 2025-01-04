@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Notes</title>
+    <link rel="stylesheet" href="/static/css/notes.css">
+ <script src="/static/js/scripts.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index">Introduction</a></li>
+                <li><a href="/">Chatbot</a></li>
+                <li><a href="/vedio">Videos</a></li>
+                <li><a href="/notes">Notes</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Notes Content Section -->
+    <section id="notes-content" class="notes-content">
+        <h1>JavaScript Notes</h1>
+        <p>Comprehensive and beginner-friendly notes on JavaScript programming. JavaScript is essential for creating interactive and dynamic web pages.</p>
+
+        <!-- Introduction -->
+        <article class="note-section">
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is a versatile programming language used both on the client-side and server-side. It enhances the interactivity and responsiveness of websites.</p>
+        </article>
+
+        <!-- Key Features -->
+        <article class="note-section">
+            <h2>Key Features of JavaScript</h2>
+            <ul>
+                <li>Client-side and server-side scripting capabilities.</li>
+                <li>Works seamlessly with HTML and CSS to create dynamic web pages.</li>
+                <li>Lightweight and interpreted.</li>
+                <li>Supports event-driven, object-oriented, and functional programming.</li>
+                <li>Extensive community support and rich libraries like React, Angular, and Node.js.</li>
+            </ul>
+        </article>
+
+        <!-- JavaScript Hello World -->
+        <article class="note-section">
+            <h2>JavaScript Hello World</h2>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+// A simple JavaScript program
+console.log("Hello, World!");
+                    </pre>
+                </div>
+              <button onclick="runHelloWorld()">Run</button>
+                <div class="output-block" id="output-hello-world">
+                    <!-- Output will appear here -->
+                </div>
+            </div>
+        </article>
+
+        <!-- Variables -->
+        <article class="note-section">
+            <h2>Variables in JavaScript</h2>
+            <p>Variables store data values. JavaScript provides three ways to declare variables: <code>var</code>, <code>let</code>, and <code>const</code>.</p>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+var x = 5;
+let y = 10;
+const z = 15;
+console.log(x, y, z);
+                    </pre>
+                </div>
+                <button onclick="runVariables()">Run</button>
+                <div class="output-block" id="output-variables">
+                    <!-- Output will appear here -->
+                </div>
+            </div>
+        </article>
+
+        <!-- Loops -->
+        <article class="note-section">
+            <h2>Loops in JavaScript</h2>
+            <p>Loops are used to perform repetitive tasks efficiently.</p>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+                    </pre>
+                </div>
+                <button onclick="runLoop()">Run</button>
+                <div class="output-block" id="output-loop">
+                    <!-- Output will appear here -->
+                </div>
+            </div>
+        </article>
+
+        <!-- Arrays -->
+        <article class="note-section">
+            <h2>Arrays in JavaScript</h2>
+            <p>Arrays store multiple values in a single variable. They are versatile and support various operations like adding or removing elements.</p>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+const fruits = ["Apple", "Banana", "Cherry"];
+fruits.push("Date");
+console.log(fruits);
+                    </pre>
+                </div>
+                <button onclick="runArray()">Run</button>
+                <div class="output-block" id="output-array">
+                    <!-- Output will appear here -->
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/static/images/logo.jpg" alt="Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 LearnIT Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

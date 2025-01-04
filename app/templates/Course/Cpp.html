@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C# Notes</title>
+    <title>C++ Notes</title>
     <link rel="stylesheet" href="/static/css/notes.css">
 </head>
 <body>
@@ -24,50 +24,56 @@
     </header>
 
     <!-- Notes Content Section -->
-    <section id="notes-content" class="notes-content">
-        <h1>C# Notes</h1>
-        <p>Comprehensive and beginner-friendly notes on C# programming.</p>
+    <section id="notescontent" class="notes-content">
+        <h1>C++ Notes</h1>
+        <p>Comprehensive and beginner-friendly notes on C++ programming.</p>
 
         <article class="note-section">
-            <h2>Introduction to C#</h2>
-            <p>C# is a modern, object-oriented programming language developed by Microsoft. It is widely used for developing desktop applications, web applications, and games.</p>
+            <h2>Introduction to C++</h2>
+            <p>C++ is a high-performance programming language widely used for system/software development and competitive programming. It is an extension of the C language and supports object-oriented programming concepts.</p>
         </article>
 
         <article class="note-section">
-            <h2>Key Features of C#</h2>
+            <h2>Key Features of C++</h2>
             <ul>
-                <li>Object-oriented and type-safe language.</li>
-                <li>Simple and easy-to-learn syntax.</li>
-                <li>Supports modern programming paradigms like LINQ and asynchronous programming.</li>
-                <li>Integrated with .NET framework.</li>
+                <li>Supports procedural and object-oriented programming paradigms.</li>
+                <li>Offers low-level memory manipulation.</li>
+                <li>Highly efficient and fast for performance-critical applications.</li>
+                <li>Supports STL (Standard Template Library) for data structures and algorithms.</li>
+                <li>Portable and versatile for various platforms.</li>
             </ul>
         </article>
 
-        <article class="note-section">
-            <h2>Basic Syntax</h2>
-            <pre>
-<code class="language-csharp">
-// A simple C# program
-using System;
+ <!-- Notes Content Section -->
+        <section id="notes-content" class="notes-content">
+        <h1>C++ Notes</h1>
+        <p>Comprehensive and beginner-friendly notes on C++ programming.</p>
 
-class Program {
-    static void Main() {
-        Console.WriteLine("Hello, World!");
-    }
+        <article class="note-section">
+            <h2>Basic C++ Program</h2>
+ <div class="code-section">
+    <div class="code-block">
+        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello C++ Programming";
+    return 0;
 }
-</code>
-            </pre>
-            <p>Above is an example of a basic C# program. It prints "Hello, World!" to the console, demonstrating the simplicity of the C# syntax.</p>
-            <h3>Output:</h3>
-            <pre>
-<code class="language-output">
-Hello, World!
-</code>
-            </pre>
+        </pre>
+        <button class="run-button" onclick="runCode()">Run</button>
+    </div>
+    <div class="output-block" id="output-block">
+        <p>Output will be displayed here...</p>
+    </div>
+</div>
+
         </article>
+    </section>
 
         <article class="note-section">
-            <h2>Data Types in C#</h2>
+            <h2>Data Types in C++</h2>
             <table>
                 <thead>
                     <tr>
@@ -82,19 +88,23 @@ Hello, World!
                     </tr>
                     <tr>
                         <td>float</td>
-                        <td>Stores fractional numbers (single-precision).</td>
+                        <td>Stores single-precision floating-point numbers.</td>
                     </tr>
                     <tr>
                         <td>double</td>
-                        <td>Stores fractional numbers (double-precision).</td>
+                        <td>Stores double-precision floating-point numbers.</td>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>Stores a single character.</td>
                     </tr>
                     <tr>
                         <td>string</td>
-                        <td>Stores text.</td>
+                        <td>Stores sequences of characters (requires <code>#include &lt;string&gt;</code>).</td>
                     </tr>
                     <tr>
                         <td>bool</td>
-                        <td>Stores true or false values.</td>
+                        <td>Stores true/false values.</td>
                     </tr>
                 </tbody>
             </table>
@@ -102,19 +112,17 @@ Hello, World!
 
         <article class="note-section">
             <h2>Control Statements</h2>
-            <p>C# provides various control statements for decision-making and looping:</p>
+            <p>C++ provides various control statements for decision-making and looping:</p>
             <ul>
                 <li><strong>if-else:</strong> Used for conditional execution.</li>
                 <li><strong>switch:</strong> Used for multi-way branching.</li>
                 <li><strong>for, while, do-while:</strong> Used for looping.</li>
-                <li><strong>foreach:</strong> Iterates through elements in a collection.</li>
             </ul>
-            <p>These control statements help in creating efficient and flexible programs.</p>
         </article>
 
         <article class="note-section">
-            <h2>Object-Oriented Programming</h2>
-            <p>C# follows the principles of object-oriented programming:</p>
+            <h2>Object-Oriented Programming in C++</h2>
+            <p>C++ is a pioneer in object-oriented programming and supports key concepts:</p>
             <ul>
                 <li><strong>Encapsulation:</strong> Bundling data and methods into objects.</li>
                 <li><strong>Inheritance:</strong> Sharing functionalities between classes.</li>
@@ -124,26 +132,13 @@ Hello, World!
         </article>
 
         <article class="note-section">
-            <h2>Common Use Cases of C#</h2>
-            <p>C# is widely used in various industries for:</p>
+            <h2>Common Use Cases of C++</h2>
+            <p>C++ is widely used for:</p>
             <ul>
-                <li>Developing desktop applications using Windows Forms or WPF.</li>
-                <li>Building web applications with ASP.NET.</li>
-                <li>Creating games using Unity Game Engine.</li>
-                <li>Working on cross-platform mobile apps with Xamarin.</li>
-                <li>Automating tasks and creating scripts.</li>
-            </ul>
-        </article>
-
-        <article class="note-section">
-            <h2>Advanced Features of C#</h2>
-            <p>C# offers advanced features for robust programming:</p>
-            <ul>
-                <li><strong>Delegates:</strong> Reference types for encapsulating methods.</li>
-                <li><strong>Events:</strong> Handling user actions or system occurrences.</li>
-                <li><strong>LINQ:</strong> Simplifies data queries with integrated syntax.</li>
-                <li><strong>Asynchronous Programming:</strong> Enhances application responsiveness.</li>
-                <li><strong>Reflection:</strong> Inspect and interact with object metadata.</li>
+                <li>System programming (e.g., operating systems, embedded systems).</li>
+                <li>Game development (e.g., Unreal Engine).</li>
+                <li>Competitive programming due to its speed and STL.</li>
+                <li>Developing real-time simulations and graphics.</li>
             </ul>
         </article>
     </section>
@@ -159,5 +154,6 @@ Hello, World!
             </div>
         </div>
     </footer>
+ <script src="/static/js/scripts.js"></script>
 </body>
 </html>

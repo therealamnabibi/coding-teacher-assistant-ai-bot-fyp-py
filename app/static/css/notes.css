@@ -188,7 +188,6 @@ footer {
     margin-bottom: 5px;
 }
 
-/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -210,7 +209,6 @@ table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Code Block Styles */
 pre {
     background-color: #282c34;
     color: #61dafb;
@@ -222,4 +220,50 @@ pre {
 pre code {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
+}
+/* Cpp Styles */
+.code-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.code-block {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #282c34;
+    color: #61dafb;
+    padding: 20px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.output-block {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.run-button {
+    position: absolute;
+    top: 10px; /* Adjusted to move closer to the top */
+    right: 10px; /* Keep it inside the code block */
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.run-button:hover {
+    background-color: #218838;
 }

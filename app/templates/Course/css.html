@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Notes</title>
+    <link rel="stylesheet" href="/static/css/notes.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index">Introduction</a></li>
+                <li><a href="/">Chatbot</a></li>
+                <li><a href="/vedio">Videos</a></li>
+                <li><a href="/notes">Notes</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Notes Content Section -->
+    <section id="notes-content" class="notes-content">
+        <h1>CSS Notes</h1>
+        <p>Comprehensive and beginner-friendly notes on CSS programming.</p>
+
+        <article class="note-section">
+            <h2>Introduction to CSS</h2>
+            <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. It controls the layout, colors, and fonts, making web pages visually appealing.</p>
+        </article>
+
+        <article class="note-section">
+            <h2>Key Features of CSS</h2>
+            <ul>
+                <li>Separates content (HTML) from design.</li>
+                <li>Offers reusability across multiple pages.</li>
+                <li>Provides responsive designs for all screen sizes.</li>
+                <li>Supports animations and transitions.</li>
+                <li>Customizes elements with advanced styling techniques.</li>
+            </ul>
+        </article>
+
+        <article class="note-section">
+            <h2>Basic CSS Syntax</h2>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+/* A simple CSS example */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+                    </pre>
+                </div>
+                <div class="output-block">
+                    <p><strong>Example:</strong> Changes the background color, text color, and font style of the webpage.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="note-section">
+            <h2>CSS Selectors</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>*</td>
+                        <td>Selects all elements.</td>
+                    </tr>
+                    <tr>
+                        <td>#id</td>
+                        <td>Selects an element with a specific ID.</td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>Selects elements with a specific class.</td>
+                    </tr>
+                    <tr>
+                        <td>tag</td>
+                        <td>Selects all elements of a specific tag.</td>
+                    </tr>
+                    <tr>
+                        <td>element1, element2</td>
+                        <td>Selects all specified elements.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="note-section">
+            <h2>CSS Box Model</h2>
+            <p>The CSS Box Model describes the structure of an element, consisting of:</p>
+            <ul>
+                <li><strong>Content:</strong> The actual content of the element.</li>
+                <li><strong>Padding:</strong> Clears an area around the content.</li>
+                <li><strong>Border:</strong> A border surrounding the padding.</li>
+                <li><strong>Margin:</strong> Clears an area outside the border.</li>
+            </ul>
+            <div class="box-model-diagram">
+                <img src="/static/images/p14.jpg" alt="CSS Box Model">
+            </div>
+        </article>
+
+        <article class="note-section">
+            <h2>CSS Flexbox</h2>
+            <p>The Flexbox Layout is a CSS layout model for distributing space and aligning items in a container:</p>
+            <ul>
+                <li><strong>justify-content:</strong> Aligns items horizontally.</li>
+                <li><strong>align-items:</strong> Aligns items vertically.</li>
+                <li><strong>flex-direction:</strong> Defines the main axis (row or column).</li>
+            </ul>
+            <div class="code-section">
+                <div class="code-block">
+                    <pre>
+/* CSS Flexbox Example */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    margin: 10px;
+}
+                    </pre>
+                </div>
+                <div class="output-block">
+                    <div class="container" style="display: flex; justify-content: center; align-items: center; height: 100px;">
+                        <div class="box" style="width: 50px; height: 50px; background-color: #007bff; margin: 10px;"></div>
+                        <div class="box" style="width: 50px; height: 50px; background-color: #007bff; margin: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/static/images/logo.jpg" alt="Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 LearnIT Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
